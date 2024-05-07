@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(7, 110, 34);
+        }
+        
+        img {
+            border-radius: 15px;height: 220px;
+        }
+        
+        h1 {
+            font-size: 25px;
+            color: #ccc;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #contact-form {
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        #contact-form input[type="text"],
+        #contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        #contact-form textarea {
+            height: 100px;
+        }
+
+        #contact-form input[type="submit"] {
+            background-color: #4CAF50;
+            width: 100%;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #contact-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="detetive.jpg" alt="Sua Foto" style="max-width: 100%;">
+        <h1>Entre em contato para obter acesso</h1>
+        <form id="contact-form" action="enviar_email.php" method="post"></form>
+        <form id="contact-form" action="mailto:vitorskw440@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Seu nome" required><br>
+            <input type="text" name="email" placeholder="Seu e-mail" required><br>
+            <textarea name="message" placeholder="Tenho interesse no serviço de investigação online especifico para:" required></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+     
+</body>
+</html>
